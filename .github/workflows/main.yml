@@ -7,8 +7,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: 'Train my model'
-        env:
-          repo_token: ${{ secrets.GIT_PASS }}
+        #env:
+          #repo_token: ${{ secrets.GIT_PASS }}
         run: |
           # Your ML workflow goes here
           pip install -r requirements.txt
